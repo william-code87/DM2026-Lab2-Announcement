@@ -1,0 +1,74 @@
+DM2026-Lab2-*-Grading-Reference.ipynb
+Git Intro & How to hand your homework.ipynb
+# Ignore directories
+./output_files/processed_dataframes/
+
+# Ignore virtual environment
+.venv/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore text files
+*.txt
+# ...except the pip-install fallback (see agent_pipeline/README.md)
+!requirements.txt
+
+# Ignore CSV files
+*.csv
+# ...except the known-answer test fixture referenced by exact path
+# throughout agent_dev/TEST_FIXTURE.md and prompts.py -- this one is
+# course source, not a dataset or generated output.
+!agent_dev/sample_fixture.csv
+
+# Ignore compiled Python bytecode
+__pycache__/
+*.pyc
+
+# One-off notebook refactoring scripts (maintainer use)
+temp_scripts/
+
+# Agentic pipeline: secrets
+config/.env
+# Grading keys -- excluded entirely for now, until a real (non-test)
+# keypair is generated. Once ready, force-add just the public half:
+#   git add -f agent_pipeline/keys/grading_public_key.pem
+# NEVER commit the private key.
+agent_pipeline/keys/
+
+# Agent-dev track: each student's in-progress workspace is generated
+# content, not course source.
+agent_dev_workspace/
+
+# All three notebooks (agent-dev, agentic-pipeline, homework) save into
+# these two shared folders now -- one encrypted log file and any saved
+# plots per track, distinguished by filename rather than by directory.
+session_logs/*.jsonl
+session_logs/*.jsonl.enc
+plots/*.png
+
+# Grading criteria: exact point values and penalty conditions, kept out
+# of the student-visible repo on purpose. README.md's own "How this gets
+# graded" section is the macro version students are meant to read;
+# these are the graders' detailed reference. Untracked going forward
+# only -- still reachable in old commits by anyone who digs, but no
+# longer in a fresh checkout.
+agent_pipeline/GRADING_GUIDE.md
+agent_pipeline/PIPELINE_GRADING_RUBRIC.md
+agent_pipeline/PROMPT_GRADING_RUBRIC.md
+
+# Maintainer-facing architecture/design notes -- not needed by students,
+# kept out of the student-visible repo the same way as the grading docs
+# above. Untracked going forward only, same caveat as above.
+agent_dev/DOCUMENTATION.md
+agent_dev/README.md
+agent_pipeline/DOCUMENTATION.md
+agent_pipeline/README.md
+
+# Local Anaconda Navigator tooling state, not course content -- created
+# automatically when this folder is opened as a project through
+# Anaconda's UI, machine-specific, never meant to be committed.
+anaconda_projects/
