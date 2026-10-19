@@ -306,7 +306,7 @@ Open your fork on GitHub and verify that the latest commit and submission files 
 
 ## B4. Submit the lab
 
-The internal Kaggle competition closes **November 23**; check Kaggle for its exact closing time. The lab submission is due **November 25 at 11:59 pm**. Push your work to your fork, then submit the fork link and a backup ZIP on NTU COOL.
+The internal Kaggle competition closes **November 22**; check Kaggle for its exact closing time. The lab submission is due **November 25 at 11:59 pm**. Push your work to your fork, then submit the fork link and a backup ZIP on NTU COOL.
 
 The backup ZIP contains these files with their paths preserved:
 
